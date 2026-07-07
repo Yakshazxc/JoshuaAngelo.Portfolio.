@@ -1,9 +1,11 @@
 :root {
   color-scheme: dark;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: #c9d1d9;
   background: #0d1117;
-  line-height: 1.6;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -22,7 +24,7 @@ body {
               linear-gradient(180deg, #070b11 0%, #0d1117 100%);
   font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
-  letter-spacing: 0.008em;
+  letter-spacing: 0.01em;
 }
 
 a {
@@ -35,7 +37,7 @@ a:hover {
 }
 
 .container {
-  width: min(1120px, calc(100% - 2rem));
+  width: min(1040px, calc(100% - 2rem));
   margin: 0 auto;
 }
 
@@ -44,7 +46,7 @@ a:hover {
 }
 
 .topbar {
-  border-bottom: 1px solid rgba(110, 118, 129, 0.18);
+  border-bottom: 1px solid rgba(110, 118, 129, 0.22);
   background: rgba(13, 17, 23, 0.96);
   backdrop-filter: blur(14px);
   position: sticky;
@@ -57,7 +59,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
 }
 
 .brand {
@@ -137,24 +139,30 @@ a:hover {
   gap: 1.75rem;
   padding: 2rem;
   margin: 2rem 0;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
+  border-radius: 24px;
 }
 
 .hero-copy .meta {
   margin: 0 0 1rem;
   color: #8b949e;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
 }
 
 .hero-card h2 {
   margin: 0;
-  font-size: clamp(1.75rem, 3vw, 2.6rem);
-  line-height: 1.1;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
 }
 
 .hero-card p {
-  margin: 1rem 0 0;
-  max-width: 44rem;
+  margin: 1.1rem 0 0;
+  max-width: 50rem;
   color: #c9d1d9;
+  font-size: 1.04rem;
+  line-height: 1.75;
 }
 
 .hero-actions {
@@ -167,26 +175,29 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1.55rem;
-  min-height: 48px;
+  padding: 1rem 1.65rem;
+  min-height: 50px;
   border-radius: 999px;
   border: 1px solid transparent;
   background: #58a6ff;
   color: #0b1d37;
   font-weight: 700;
-  letter-spacing: 0.01em;
-  transition: transform 0.2s ease, background 0.2s ease;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 16px 30px rgba(88, 166, 255, 0.2);
 }
 
 .button:hover {
   transform: translateY(-1px);
   background: #4494e6;
+  box-shadow: 0 20px 40px rgba(88, 166, 255, 0.2);
 }
 
 .button-secondary {
   color: #c9d1d9;
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(110, 118, 129, 0.18);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(110, 118, 129, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 .button-secondary:hover {
@@ -199,32 +210,36 @@ a:hover {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 
 .section-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.15rem;
 }
 
 .section-header span {
   display: block;
   color: #58a6ff;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
 }
 
 .section-header h3 {
   margin: 0;
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  line-height: 1.2;
+  font-size: clamp(1.6rem, 2vw, 2.1rem);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
 }
 
 .section p {
   color: #8b949e;
-  max-width: 46rem;
+  max-width: 50rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
 }
 
 .grid-two {
@@ -239,8 +254,10 @@ a:hover {
   gap: 1.5rem;
 }
 
-.card {
-  padding: 1.5rem;
+.card,
+.timeline-item,
+.education-item {
+  padding: 1.75rem;
 }
 
 .card h4,
@@ -270,10 +287,10 @@ a:hover {
 
 .bullet-list li,
 .skill-list li {
-  padding: 0.9rem 1rem;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.05);
-  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
 }
 
 .full-width li {
@@ -298,12 +315,12 @@ a:hover {
 
 .timeline-item ul {
   margin: 1rem 0 0;
-  padding-left: 1.15rem;
+  padding-left: 1.25rem;
   color: #8b949e;
 }
 
 .timeline-item li {
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.75rem;
 }
 
 .education-grid {
