@@ -1,206 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua Angelo Ebbah | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="page-shell">
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <div class="brand">
-          <div class="logo-mark">JAE</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Joshua Angelo is a freelance web designer and developer building modern websites, portfolios, and digital experiences for growing brands."
+    />
+    <title>Joshua Angelo | Freelance Web Designer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Joshua Angelo home">
+        <span class="brand-mark">JA</span>
+        <span>Joshua Angelo</span>
+      </a>
 
-          <div>
-            <p class="eyebrow">Portfolio</p>
-            <h1>Joshua Angelo Ebbah</h1>
-            <p class="subtitle">Administrative support · Operations · IT student</p>
-          </div>
-        </div>
-        <nav class="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <main class="container">
-      <section id="hero" class="hero-card">
-        <div class="hero-copy">
-          <p class="meta">General Trias, Cavite · 0968 658 5877 · <a href="mailto:ebbahjoshuaangelo@gmail.com">ebbahjoshuaangelo@gmail.com</a></p>
-          <h2>Motivated and adaptable professional with 5+ years of experience in administration, customer service, small business operations, and freelance support.</h2>
-          <p>I bring strong organization, communication, and fast learning to every role, with experience in Microsoft Office, Canva, Adobe basics, data entry, and basic troubleshooting.</p>
-        </div>
-        <div class="hero-actions">
-          <a class="button" href="#experience">View Experience</a>
-          <a class="button button-secondary" href="mailto:ebbahjoshuaangelo@gmail.com">Email Me</a>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="section-header">
-          <span>Professional summary</span>
-          <h3>Dependable support specialist with a practical blend of administrative and technical skills.</h3>
-        </div>
-        <p>Experienced in financial record keeping, client coordination, event support, and online business management. Skilled at maintaining accurate documentation, operating with care under pressure, and learning new tools quickly.</p>
-      </section>
-
-      <section id="experience" class="section grid-two">
-        <div class="section-panel">
-          <div class="section-header">
-            <span>Experience</span>
-            <h3>Practical roles that strengthen process and service.</h3>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/joshua-portrait.svg" alt="" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Freelance web designer and developer</p>
+          <h1 id="hero-title">Joshua Angelo</h1>
+          <p class="hero-copy">
+            I build fast, polished websites that help freelancers, startups, and local brands look credible,
+            explain their value clearly, and turn visitors into clients.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#contact">Start a Project</a>
+            <a class="button button-secondary" href="#work">View Work</a>
           </div>
-          <div class="timeline">
-            <article class="timeline-item">
-              <h4>Finance Clerk</h4>
-              <p class="item-meta">Mineski Infinity Computer Cafe · 2017–2018</p>
-              <ul>
-                <li>Recorded daily sales and expenses with accuracy.</li>
-                <li>Managed cash transactions and reconciled accounts.</li>
-                <li>Prepared financial records for review and reporting.</li>
-              </ul>
+          <dl class="hero-stats" aria-label="Freelance highlights">
+            <div>
+              <dt>Websites</dt>
+              <dd>Portfolio, business, landing pages</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Clean UI, responsive design, speed</dd>
+            </div>
+            <div>
+              <dt>Delivery</dt>
+              <dd>Design, build, launch support</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section intro-section" aria-label="Specialty summary">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">What I do best</p>
+            <h2>Websites that feel professional from the first click.</h2>
+          </div>
+          <p>
+            Your website should make people trust you quickly. I shape your message, organize your content,
+            design the experience, and build a responsive site that looks sharp on every screen.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Freelance support from idea to launch.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon">01</span>
+            <h3>Portfolio Websites</h3>
+            <p>Personal websites that present your story, skills, projects, and contact details with confidence.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">02</span>
+            <h3>Business Landing Pages</h3>
+            <p>Focused pages for offers, events, and services with persuasive sections and clear calls to action.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">03</span>
+            <h3>Website Refresh</h3>
+            <p>Modern visual updates, cleaner layouts, better mobile behavior, and improved content structure.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">04</span>
+            <h3>Front-End Build</h3>
+            <p>Responsive HTML, CSS, and JavaScript builds that are lightweight, accessible, and easy to maintain.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="work-band" id="work" aria-labelledby="work-title">
+        <div class="section work-content">
+          <div class="section-heading">
+            <p class="eyebrow">Featured work</p>
+            <h2 id="work-title">Recent project directions.</h2>
+          </div>
+          <div class="work-grid">
+            <article class="project-card">
+              <div class="project-visual visual-one"></div>
+              <div class="project-content">
+                <p>Personal Brand</p>
+                <h3>Creative portfolio for a digital freelancer</h3>
+                <span>Identity, layout, responsive build</span>
+              </div>
             </article>
-            <article class="timeline-item">
-              <h4>Liaison Officer</h4>
-              <p class="item-meta">Patz Couture and Events · 2019–2020</p>
-              <ul>
-                <li>Coordinated with clients, suppliers, and event teams.</li>
-                <li>Assisted in event operations, documentation, and logistics.</li>
-              </ul>
+            <article class="project-card">
+              <div class="project-visual visual-two"></div>
+              <div class="project-content">
+                <p>Service Website</p>
+                <h3>One-page site for a local service provider</h3>
+                <span>Landing page, content structure, contact flow</span>
+              </div>
             </article>
-            <article class="timeline-item">
-              <h4>Photobooth Operator</h4>
-              <p class="item-meta">Phos Magos Photobooth · 2019–2020</p>
-              <ul>
-                <li>Operated event equipment while helping customers.</li>
-                <li>Maintained setup quality and supported guests.</li>
-              </ul>
-            </article>
-            <article class="timeline-item">
-              <h4>Online Business Owner</h4>
-              <p class="item-meta">The Box · 2020–2021</p>
-              <ul>
-                <li>Managed orders, inventory, and customer inquiries.</li>
-                <li>Delivered operations support for an online small business.</li>
-              </ul>
+            <article class="project-card">
+              <div class="project-visual visual-three"></div>
+              <div class="project-content">
+                <p>Website Refresh</p>
+                <h3>Modernized interface for a growing small brand</h3>
+                <span>Visual redesign, mobile polish, performance</span>
+              </div>
             </article>
           </div>
         </div>
-
-        <aside class="panel-secondary">
-          <div class="card">
-            <h4>Key strengths</h4>
-            <ul class="bullet-list">
-              <li>Microsoft Office</li>
-              <li>Data entry</li>
-              <li>Customer service</li>
-              <li>Canva & Adobe basics</li>
-              <li>Computer troubleshooting</li>
-              <li>Communication</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h4>Languages</h4>
-            <ul class="bullet-list">
-              <li>Filipino / Tagalog — Native</li>
-              <li>English — Intermediate</li>
-            </ul>
-          </div>
-        </aside>
       </section>
 
-      <section id="education" class="section">
-        <div class="section-header">
-          <span>Education</span>
-          <h3>Academic milestones and professional learning.</h3>
+      <section class="section" id="process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">Process</p>
+          <h2 id="process-title">A simple path from rough idea to published site.</h2>
         </div>
-        <div class="education-grid">
-          <article class="education-item">
-            <p class="edu-year">2025–2026</p>
-            <h4>BS Information Technology</h4>
-            <p>National University</p>
+        <div class="process-list">
+          <article>
+            <span>Discovery</span>
+            <h3>Clarify the goal</h3>
+            <p>We define your audience, offer, page structure, and the action visitors should take.</p>
           </article>
-          <article class="education-item">
-            <p class="edu-year">2024–2025</p>
-            <h4>Senior High School</h4>
-            <p>General Juan Castaneda SHS</p>
+          <article>
+            <span>Design</span>
+            <h3>Shape the look</h3>
+            <p>I create a modern direction with clean hierarchy, responsive layouts, and brand-fit visuals.</p>
           </article>
-          <article class="education-item">
-            <p class="edu-year">2023–2024</p>
-            <h4>High School</h4>
-            <p>Malinta National High School</p>
+          <article>
+            <span>Build</span>
+            <h3>Make it real</h3>
+            <p>The site is built with lightweight code, tested across screen sizes, and prepared for launch.</p>
           </article>
-          <article class="education-item">
-            <p class="edu-year">2021–2022</p>
-            <h4>Alternative Learning System Graduate</h4>
-            <p>ALS Program</p>
-          </article>
-          <article class="education-item">
-            <p class="edu-year">2008–2014</p>
-            <h4>Elementary School</h4>
-            <p>Malinta Elementary School</p>
+          <article>
+            <span>Launch</span>
+            <h3>Publish and refine</h3>
+            <p>I help with final polish, deployment checks, and small adjustments after the site goes live.</p>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="section grid-two">
-        <div class="section-panel">
-          <div class="section-header">
-            <span>Skills</span>
-            <h3>Tools and abilities I use every day.</h3>
-          </div>
-          <ul class="skill-list full-width">
-            <li>Microsoft Office</li>
-            <li>Canva</li>
-            <li>Basic Adobe tools</li>
-            <li>Data entry</li>
-            <li>Basic computer troubleshooting</li>
-            <li>Customer service</li>
-            <li>Communication</li>
-            <li>Time management</li>
-            <li>Teamwork</li>
-          </ul>
+      <section class="section proof-section" aria-labelledby="proof-title">
+        <div>
+          <p class="eyebrow">Why clients hire me</p>
+          <h2 id="proof-title">Clear design, honest communication, and practical execution.</h2>
         </div>
-
-        <aside class="panel-secondary">
-          <div class="card">
-            <h4>Contact</h4>
-            <p><strong>Location</strong><br>General Trias, Cavite</p>
-            <p><strong>Phone</strong><br>0968 658 5877</p>
-            <p><strong>Email</strong><br><a href="mailto:ebbahjoshuaangelo@gmail.com">ebbahjoshuaangelo@gmail.com</a></p>
-            <a class="button button-secondary full-width" href="mailto:ebbahjoshuaangelo@gmail.com">Email Joshua</a>
-          </div>
-          <div class="card">
-            <h4>Profile</h4>
-            <p>Available for roles that combine administration, operations support, and entry-level IT work. Ready to learn new tools and support team goals with care and precision.</p>
-          </div>
-        </aside>
+        <div class="proof-grid">
+          <article>
+            <strong>Mobile first</strong>
+            <p>Layouts are planned for real devices so the site feels natural on phones, tablets, and desktops.</p>
+          </article>
+          <article>
+            <strong>Easy to update</strong>
+            <p>Code and content are organized clearly, making future edits less stressful.</p>
+          </article>
+          <article>
+            <strong>Client focused</strong>
+            <p>Every section supports the visitor journey, from first impression to contact.</p>
+          </article>
+        </div>
       </section>
 
-      <section id="contact" class="section">
-        <div class="section-header">
-          <span>Contact</span>
-          <h3>Ready to talk about a new opportunity?</h3>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <div>
+            <p class="eyebrow">Available for freelance projects</p>
+            <h2 id="contact-title">Let's build a website that makes your work easier to trust.</h2>
+            <p>
+              Send a short message about what you need, what you already have, and when you want to launch.
+              I'll help turn it into a clear plan.
+            </p>
+          </div>
+          <form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Project details
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Message</button>
+          </form>
         </div>
-        <p>Reach out directly via email to discuss administrative support, operations, or IT-related roles.</p>
-        <a class="button" href="mailto:ebbahjoshuaangelo@gmail.com">Send an Email</a>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>Clean, minimal portfolio designed for easy sharing and fast review.</p>
-      </div>
+    <footer class="site-footer">
+      <p>&copy; 2026 Joshua Angelo. Freelance web designer and developer.</p>
+      <a href="#top">Back to top</a>
     </footer>
-  </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
